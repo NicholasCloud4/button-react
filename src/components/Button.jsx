@@ -1,7 +1,12 @@
 import React from "react"
 
 export default function Button(props) {
+
+    function handleClick() {
+        console.log("Logging in...")
+    }
+
     return (
-        <button>{props.children}</button>
+        <button {...props}>{props.children}</button>
     )
 }
