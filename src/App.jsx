@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css'
 import Button from './components/Button'
+import { GiMoonOrbit } from "react-icons/gi";
 
 
 function App() {
-
   return (
     <main>
-      <Button>Buy now!</Button>
+      <Button><GiMoonOrbit />Buy now!</Button>
     </main>
   )
 }
