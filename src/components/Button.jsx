@@ -1,12 +1,10 @@
 import React from "react"
 
-export default function Button(props) {
+export default function Button({ children, ...rest }) {
 
-    function handleClick() {
-        console.log("Logging in...")
-    }
+    console.log(rest)
 
     return (
-        <button {...props}>{props.children}</button>
+        <button {...rest}>{children}</button>
     )
 }

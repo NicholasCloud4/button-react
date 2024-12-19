@@ -7,16 +7,6 @@ import { FcGoogle } from "react-icons/fc";
 
 function App() {
 
-  /**
- * Challenge: Add an onClick handler to the Button
- * component instance (the one on this page). Then
- * make whatever changes you need for it to actually
- * work.
- * 
- * Clicking the button should log "Logging in..." 
- * to the console.
- */
-
   return (
     <main>
       <Button style={{ color: "green" }} onClick={() => console.log("Logging in...")}>
