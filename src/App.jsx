@@ -9,8 +9,12 @@ function App() {
 
   return (
     <main>
-      <Button size="lg">Log in with Google</Button>
-    </main>
+      <Button size="sm">Small</Button>
+      <Button size="lg">Large</Button>
+      <Button size="sm" variant="success">Success</Button>
+      <Button size="lg" variant="warning">Warning</Button>
+      <Button size="lg" variant="danger">Danger</Button>
+    </main >
   )
 }
 

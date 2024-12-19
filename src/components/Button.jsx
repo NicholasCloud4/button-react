@@ -1,27 +1,18 @@
 import React from "react"
 
-export default function Button({ children, size, ...rest }) {
+export default function Button({ children, size, className, variant, ...rest }) {
 
     /**
-     * Challenge: accept the `size` prop and set the `className` of the
-     * <button> to:
+     * Challenge: 
      * 
-     * "button-small" if `size` is "sm"
-     * "button-large" if `size` is "lg"
-     * 
-     * Note: don't try to manually add a `className` to the Button
-     * instance in index.js yet. (DO add `className` to this file
-     * as part of the challenge, though.)
+     * Accept a `variant` prop and style the Button component
+     * accordingly. The values can be `success`, `warning`, or `danger`. 
+     * Check the Figma design for the specific colors to be used for each
+     * variant.
      */
 
-    let sizeClass;
-    if (size === "sm") {
-        sizeClass = "button-small";
-    } else if (size === "lg") {
-        sizeClass = "button-large";
-    }
 
     return (
-        <button className={sizeClass} {...rest}>{children}</button >
+        <button className={`button-${size} ${variant}`} {...rest}>{children}</button>
     )
 }
